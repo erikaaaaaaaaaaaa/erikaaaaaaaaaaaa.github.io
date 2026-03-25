@@ -23,7 +23,7 @@ target = 'assets'
 
 [[module.mounts]]
 source = 'bundled'
-target = 'assets'
+target = 'bundled'  # Changing the target to 'bundled' matches your Console error!
 
 [[module.mounts]]
 source = 'static'
@@ -32,7 +32,3 @@ target = 'static'
 [[module.mounts]]
 source = 'content'
 target = 'content'
-
-[[module.mounts]]
-source = 'bundled'
-target = 'static'
