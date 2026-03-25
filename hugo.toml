@@ -4,6 +4,8 @@ timeout = "1200s"
 baseURL = 'https://erikaaaaaaaaaaaa.github.io'
 # website title
 title = 'EAT'
+assetDir = "assets"
+publishDir = "public"
 # don't touch this
 disableKinds = ["section", "taxonomy", "term", "home"]
 # robots.txt
@@ -21,7 +23,7 @@ target = 'assets'
 
 [[module.mounts]]
 source = 'bundled'
-target = 'assets/bundled'
+target = 'assets'
 
 [[module.mounts]]
 source = 'static'
@@ -30,3 +32,7 @@ target = 'static'
 [[module.mounts]]
 source = 'content'
 target = 'content'
+
+[[module.mounts]]
+source = 'bundled'
+target = 'static'
