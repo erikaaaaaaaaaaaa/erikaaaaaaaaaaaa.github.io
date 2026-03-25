@@ -20,6 +20,7 @@ jobs:
       - name: Install and Build Assets
         run: |
           npm install
+          npm install esbuild  # Explicitly adding the missing piece
           npm run build
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
