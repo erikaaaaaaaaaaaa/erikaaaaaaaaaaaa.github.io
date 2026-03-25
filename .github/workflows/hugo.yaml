@@ -18,10 +18,12 @@ jobs:
         with:
           node-version: '20'
       - name: Install and Build Assets
+        env:
+          NODE_ENV: production
         run: |
           npm install
           npm install esbuild
-          npx vite build --emptyOutDir
+          npx vite build --mode production
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
