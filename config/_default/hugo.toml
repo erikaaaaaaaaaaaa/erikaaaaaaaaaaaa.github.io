@@ -1,9 +1,9 @@
 # timeout
 timeout = "1200s"
 # your website url
-baseURL = 'https://bridget-demo.sped0n.com'
+baseURL = 'https://erikaaaaaaaaaaaa.github.io'
 # website title
-title = 'Bridget'
+title = 'EAT'
 # don't touch this
 disableKinds = ["section", "taxonomy", "term", "home"]
 # robots.txt
