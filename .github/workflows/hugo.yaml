@@ -20,8 +20,8 @@ jobs:
       - name: Install and Build Assets
         run: |
           npm install
-          npm install esbuild  # Explicitly adding the missing piece
-          npm run build
+          npm install esbuild
+          npx vite build  # This runs just the part that worked, skipping the broken hugo part
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
