@@ -22,13 +22,14 @@ source = 'assets'
 target = 'assets'
 
 [[module.mounts]]
-source = 'bundled'
-target = 'bundled'  # Changing the target to 'bundled' matches your Console error!
-
-[[module.mounts]]
 source = 'static'
 target = 'static'
 
 [[module.mounts]]
 source = 'content'
 target = 'content'
+
+# This is the trick: telling Hugo 'bundled' is part of 'static'
+[[module.mounts]]
+source = 'bundled'
+target = 'static/bundled'
