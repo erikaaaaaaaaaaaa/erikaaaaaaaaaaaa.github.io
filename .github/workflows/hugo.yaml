@@ -25,6 +25,8 @@ jobs:
         run: |
           pnpm install
           pnpm run vite:build
+          mkdir -p assets/bundled
+          cp -r bundled/* assets/bundled/
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
