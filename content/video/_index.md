@@ -1,13 +1,13 @@
 ---
 type: _default
 layout: single
-url: /webb/
+url: /video/
 menu:
   main:
     weight: 2
-    identifier: Webb
-    title: Webb
-unifiedAlt: '© Alex Webb'
+    identifier: video
+    title: video
+unifiedAlt: '© video'
 build:
   publishResources: false
 ---
