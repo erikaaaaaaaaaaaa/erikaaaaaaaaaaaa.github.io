@@ -7,7 +7,7 @@ title = 'EAT'
 assetDir = "assets"
 publishDir = "public"
 # don't touch this
-disableKinds = ["section", "taxonomy", "term", "home"]
+disableKinds = ["taxonomy", "term"]
 # robots.txt
 enableRobotsTXT = true
 
