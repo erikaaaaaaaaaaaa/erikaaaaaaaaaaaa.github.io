@@ -7,7 +7,7 @@ title = 'EAT'
 assetDir = "assets"
 publishDir = "public"
 # don't touch this
-disableKinds = ["taxonomy", "term"]
+disableKinds = ["taxonomy", "term", "home"]
 # robots.txt
 enableRobotsTXT = true
 
@@ -32,4 +32,4 @@ target = 'content'
 # This is the trick: telling Hugo 'bundled' is part of 'static'
 [[module.mounts]]
 source = 'bundled'
-target = 'static/bundled'
+target = 'assets/bundled'
