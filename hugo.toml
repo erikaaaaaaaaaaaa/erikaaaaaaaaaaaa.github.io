@@ -48,3 +48,28 @@ target = 'assets/bundled'
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "JSON"]  # This tells Hugo to build the 'index.json' for Books, Articles, etc.
   page = ["HTML"]
+
+  [[menu.main]]
+    name = "Books"
+    url = "/Books/"
+    weight = 1
+
+[[menu.main]]
+    name = "Articles"
+    url = "/Articles/"
+    weight = 2
+
+[[menu.main]]
+    name = "Films"
+    url = "/Films/"
+    weight = 3
+
+[[menu.main]]
+    name = "Other"
+    url = "/Other/"
+    weight = 4
+
+[[menu.main]]
+    name = "Info"
+    url = "/Info/"
+    weight = 5
