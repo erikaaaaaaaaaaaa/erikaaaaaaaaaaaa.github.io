@@ -29,12 +29,17 @@ target = 'static'
 source = 'content'
 target = 'content'
 
-# MOUNT 1: For Hugo's internal brain
+# This ensures the browser can find your JS/CSS directly
 [[module.mounts]]
 source = 'bundled'
-target = 'assets/bundled'
+target = 'static' 
 
-# MOUNT 2: For the Browser's eyes (This fixes the red error!)
+# This ensures Hugo's internal build can also see them
 [[module.mounts]]
 source = 'bundled'
-target = 'static/bundled'
+target = 'assets'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "JSON"]  # This tells Hugo to build the 'index.json' for Books, Articles, etc.
+  page = ["HTML"]
