@@ -1,10 +1,10 @@
 ---
 type: _default
-layout: single
+layout: list
 url: /articles/
 menu:
   main:
-    weight: 1
+    weight: 2
     identifier: articles
     title: articles
 unifiedAlt: '© articles'

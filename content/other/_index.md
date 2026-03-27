@@ -1,10 +1,10 @@
 ---
 type: _default
-layout: single
+layout: list
 url: /other/
 menu:
   main:
-    weight: 2
+    weight: 4
     identifier: other
     title: other
 unifiedAlt: '© other'

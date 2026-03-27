@@ -29,7 +29,7 @@ target = 'static'
 source = 'content'
 target = 'content'
 
-# This is the trick: telling Hugo 'bundled' is part of 'static'
+# This is the trick: telling Hugo 'bundled' is part of 'assets'
 [[module.mounts]]
 source = 'bundled'
 target = 'assets/bundled'

@@ -1,13 +1,13 @@
 ---
 type: _default
-layout: single
+layout: list
 url: /books/
 menu:
   main:
-    weight: 3
-    identifier: Books
-    title: Books
-unifiedAlt: '© Books'
+    weight: 1
+    identifier: books
+    title: books
+unifiedAlt: '© books'
 build:
   publishResources: false
 ---
