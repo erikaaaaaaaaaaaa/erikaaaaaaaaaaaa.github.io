@@ -29,7 +29,12 @@ target = 'static'
 source = 'content'
 target = 'content'
 
-# This is the trick: telling Hugo 'bundled' is part of 'assets'
+# MOUNT 1: For Hugo's internal brain
 [[module.mounts]]
 source = 'bundled'
 target = 'assets/bundled'
+
+# MOUNT 2: For the Browser's eyes (This fixes the red error!)
+[[module.mounts]]
+source = 'bundled'
+target = 'static/bundled'
