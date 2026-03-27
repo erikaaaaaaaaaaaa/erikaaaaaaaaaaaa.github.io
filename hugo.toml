@@ -29,14 +29,15 @@ target = 'static'
 source = 'content'
 target = 'content'
 
-# Fixes the JS/CSS "MIME" errors by putting files in the right subfolders
+# This puts the files exactly where the browser is looking in your screenshot
 [[module.mounts]]
-source = 'bundled/js'
-target = 'static/js'
+source = 'bundled'
+target = 'static/bundled'
 
+# This keeps Hugo's internal build happy so it doesn't crash again
 [[module.mounts]]
-source = 'bundled/css'
-target = 'static/css'
+source = 'bundled'
+target = 'assets/bundled'
 
 # Fixes the internal Hugo build "Nil Pointer"
 [[module.mounts]]
