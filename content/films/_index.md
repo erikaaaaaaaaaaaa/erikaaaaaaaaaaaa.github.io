@@ -5,9 +5,9 @@ url: /films/
 menu:
   main:
     weight: 3
-    identifier: films
-    title: films
-unifiedAlt: '© films'
+    identifier: Films
+    title: Films
+unifiedAlt: '© Films'
 build:
   publishResources: false
 ---

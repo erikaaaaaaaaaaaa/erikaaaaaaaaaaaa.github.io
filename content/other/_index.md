@@ -5,9 +5,9 @@ url: /other/
 menu:
   main:
     weight: 4
-    identifier: other
-    title: other
-unifiedAlt: '© other'
+    identifier: Other
+    title: Other
+unifiedAlt: '© Other'
 build:
   publishResources: false
 ---

@@ -5,9 +5,9 @@ url: /books/
 menu:
   main:
     weight: 1
-    identifier: books
-    title: books
-unifiedAlt: '© books'
+    identifier: Books
+    title: Books
+unifiedAlt: '© Books'
 build:
   publishResources: false
 ---
