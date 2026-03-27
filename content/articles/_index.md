@@ -1,6 +1,6 @@
 ---
 type: _default
-layout: list
+layout: single
 url: /articles/
 menu:
   main:
