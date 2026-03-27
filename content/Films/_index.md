@@ -1,7 +1,7 @@
 ---
 type: _default
 layout: single
-url: /films/
+url: /Films/
 menu:
   main:
     weight: 3

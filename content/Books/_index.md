@@ -1,7 +1,7 @@
 ---
 type: _default
 layout: single
-url: /books/
+url: /Books/
 menu:
   main:
     weight: 1

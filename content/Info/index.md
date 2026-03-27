@@ -18,4 +18,4 @@ Bridget is a _minimal_ Hugo theme designed for photographers/visual artists, pow
 
 Original site design by <u>[Tyler McRobert](https://tylermcrobert.com)</u>.
 
-&copy; {{</* 2026 */>}} <u>[erikaaaaaaaaaaaa](https://erikaaaaaaaaaaaa.github.io/)</u> | Built with Hugo
+&copy; 2026 <u>[erikaaaaaaaaaaaa](https://erikaaaaaaaaaaaa.github.io/)</u> | Built with Hugo

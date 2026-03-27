@@ -1,7 +1,7 @@
 ---
 type: _default
 layout: single
-url: /articles/
+url: /Articles/
 menu:
   main:
     weight: 2
