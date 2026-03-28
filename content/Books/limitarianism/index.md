@@ -1,8 +1,11 @@
 ---
 title: "Limitarianism"
+layout: "single"
+url: "/Books/limitarianism/"
 menu:
   main:
-    parent: Books
+    parent: "Books"
+    identifier: "limitarianism"
     weight: 1
 ---
 
