@@ -44,32 +44,37 @@ target = 'assets/bundled'
 source = 'bundled'
 target = 'assets/bundled'
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "JSON"]
-  page = ["HTML", "JSON"]
-
-  [[menu.main]]
+[[menu.main]]
     name = "Books"
     url = "/Books/"
+    identifier = "Books"
     weight = 1
 
 [[menu.main]]
     name = "Articles"
     url = "/Articles/"
+    identifier = "Articles"
     weight = 2
 
 [[menu.main]]
     name = "Films"
     url = "/Films/"
+    identifier = "Films"
     weight = 3
 
 [[menu.main]]
     name = "Other"
     url = "/Other/"
+    identifier = "Other"
     weight = 4
 
 [[menu.main]]
     name = "Info"
     url = "/Info/"
+    identifier = "Info"
     weight = 5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "JSON"]
+  page = ["HTML", "JSON"]
