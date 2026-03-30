@@ -29,17 +29,10 @@ target = 'static'
 source = 'content'
 target = 'content'
 
-# This puts the files exactly where the browser is looking in your screenshot
 [[module.mounts]]
 source = 'bundled'
 target = 'static/bundled'
 
-# This keeps Hugo's internal build happy so it doesn't crash again
-[[module.mounts]]
-source = 'bundled'
-target = 'assets/bundled'
-
-# Fixes the internal Hugo build "Nil Pointer"
 [[module.mounts]]
 source = 'bundled'
 target = 'assets/bundled'

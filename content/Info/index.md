@@ -1,15 +1,7 @@
 ---
-type: _default
-layout: single
-url: /Info/
-menu:
-  main:
-    weight: 5
-    identifier: Info
-    title: Info
-unifiedAlt: ''
-build:
-  publishResources: false
+title: "Info"
+url: "/Info/"
+unifiedAlt: '© Info'
 ---
 
 Bridget is a _minimal_ Hugo theme designed for photographers/visual artists, powered by <u>[SolidJS](https://www.solidjs.com)</u>.

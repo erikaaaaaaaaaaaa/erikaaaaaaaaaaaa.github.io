@@ -1,13 +1,5 @@
 ---
-type: _default
-layout: single
-url: /Articles/
-menu:
-  main:
-    weight: 2
-    identifier: Articles
-    title: Articles
+title: "Articles"
+url: "/Articles/"
 unifiedAlt: '© Articles'
-build:
-  publishResources: false
 ---
