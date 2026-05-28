@@ -1,6 +1,6 @@
 ---
-title: "Info"
-url: "/Info/"
+title: "..."
+url: "/info/"
 ---
 
 Bridget is a _minimal_ Hugo theme designed for photographers/visual artists, powered by <u>[SolidJS](https://www.solidjs.com)</u>.

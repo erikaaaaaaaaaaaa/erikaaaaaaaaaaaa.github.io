@@ -3,7 +3,7 @@ timeout = "1200s"
 # your website url
 baseURL = 'https://erikaaaaaaaaaaaa.github.io'
 # website title
-title = 'EAT'
+title = '<3'
 assetDir = "assets"
 publishDir = "public"
 # don't touch this
@@ -13,9 +13,6 @@ enableRobotsTXT = true
 
 # theme as module
 [module]
-# replacements = "github.com/Sped0n/bridget/v2 -> ../.." # deploy with local dir (relative to hugo site theme dir)  WARN: delete this line if you want to deploy with git
-# [[module.imports]]
-# path = "github.com/Sped0n/bridget/v2" # deploy with git (recommended)
 
 [[module.mounts]]
 source = 'assets'
@@ -43,31 +40,31 @@ target = 'assets/bundled'
   page = ["HTML", "JSON"]
 
 [[menu.main]]
-  name = "Books"
-  url = "/Books/"
-  identifier = "Books"
-  weight = 1
+name = "Here's artwork I love,"
+url = "/artwork/"
+identifier = "artwork"
+weight = 1
 
 [[menu.main]]
-  name = "Articles"
-  url = "/Articles/"
-  identifier = "Articles"
-  weight = 2
+name = "some things I've read,"
+url = "/read/"
+identifier = "read"
+weight = 2
 
 [[menu.main]]
-  name = "Films"
-  url = "/Films/"
-  identifier = "Films"
-  weight = 3
+name = "watched,"
+url = "/watched/"
+identifier = "watched"
+weight = 3
 
 [[menu.main]]
-  name = "Other"
-  url = "/Other/"
-  identifier = "Other"
-  weight = 4
+name = "and listened to"
+url = "/listened/"
+identifier = "listened"
+weight = 4
 
 [[menu.main]]
-  name = "Info"
-  url = "/Info/"
-  identifier = "Info"
-  weight = 5
+name = "..."
+url = "/info/"
+identifier = "info"
+weight = 5
