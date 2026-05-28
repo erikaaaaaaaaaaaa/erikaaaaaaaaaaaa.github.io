@@ -275,3 +275,4 @@ export default function Stage(): JSX.Element {
       </div>
     </>
   )
+}
