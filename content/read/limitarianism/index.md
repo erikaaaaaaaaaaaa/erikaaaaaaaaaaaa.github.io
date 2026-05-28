@@ -1,10 +1,10 @@
 ---
 title: "Limitarianism"
 layout: "single"
-url: "/Books/limitarianism/"
+url: "/read/limitarianism/"
 menu:
   main:
-    parent: "Books"
+    parent: "read"
     identifier: "limitarianism"
     weight: 1
 ---
