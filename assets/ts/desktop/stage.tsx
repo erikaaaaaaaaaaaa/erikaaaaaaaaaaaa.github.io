@@ -212,24 +212,66 @@ export default function Stage(): JSX.Element {
 
   return (
     <>
-      <div class="stage" onClick={onClick} onKeyDown={onClick}>
-        <For each={imageState().images}>
-          {(ij, i) => (
-            <img
-              ref={imgs[i()]}
-              height={ij.loImgH}
-              width={ij.loImgW}
-              data-hi-url={ij.hiUrl}
-              data-hi-img-h={ij.hiImgH}
-              data-hi-img-w={ij.hiImgW}
-              data-lo-url={ij.loUrl}
-              data-lo-img-h={ij.loImgH}
-              data-lo-img-w={ij.loImgW}
-              alt={ij.alt}
-            />
-          )}
-        </For>
+      {/* 1. Parent wrapper handling the split screen display rule */}
+      <div 
+        class="layout-split-container" 
+        style={{
+          display: "flex",
+          width: "100vw",
+          height: "100vh",
+          overflow: "hidden"
+        }}
+      >
+        {/* 2. Left 65%: The interactive image trail stage canvas */}
+        <div 
+          class="stage" 
+          onClick={onClick} 
+          onKeyDown={onClick}
+          style={{
+            width: desktop.isOpen() ? "65%" : "100%",
+            transition: "width 0.6s cubic-bezier(0.25, 1, 0.5, 1)"
+          }}
+        >
+          <For each={imageState().images}>
+            {(ij, i) => (
+              <img
+                ref={imgs[i()]}
+                height={ij.loImgH}
+                width={ij.loImgW}
+                data-hi-url={ij.hiUrl}
+                data-hi-img-h={ij.hiImgH}
+                data-hi-img-w={ij.hiImgW}
+                data-lo-url={ij.loUrl}
+                data-lo-img-h={ij.loImgH}
+                data-lo-img-w={ij.loImgW}
+                alt={ij.alt}
+              />
+            )}
+          </For>
+        </div>
+
+        {/* 3. Right 35%: The sliding editorial sidebar window */}
+        <div 
+          class="text-sidebar"
+          style={{
+            width: desktop.isOpen() ? "35%" : "0%",
+            height: "100vh",
+            "background-color": "#ffffff",
+            "border-left": desktop.isOpen() ? "1px solid #eaeaea" : "none",
+            transition: "width 0.6s cubic-bezier(0.25, 1, 0.5, 1)",
+            overflow: "y-scroll",
+            padding: desktop.isOpen() ? "40px" : "0px",
+            opacity: desktop.isOpen() ? 1 : 0,
+            "transition-property": "width, opacity, padding"
+          }}
+        >
+          {/* Dynamic text injector: pulls the text field string from the currently viewed image item */}
+          <div class="sidebar-content-wrapper" style={{ "max-width": "450px" }}>
+            <p style={{ "font-family": "monospace", "font-size": "14px", "line-height": "1.6" }}>
+              {imageState().images[desktop.index()]?.text || ""}
+            </p>
+          </div>
+        </div>
       </div>
     </>
   )
-}

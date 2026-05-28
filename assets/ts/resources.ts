@@ -8,6 +8,7 @@ export interface ImageJSON {
   hiUrl: string
   hiImgH: number
   hiImgW: number
+  text?: string
 }
 
 export async function getImageJSON(): Promise<ImageJSON[]> {
